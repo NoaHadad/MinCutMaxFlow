@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".choosingAlgo">
+
+
+    <include layout="@layout/content_choosing_algo" />
+
+    <TextView
+        android:textColor="#003366"
+        android:id="@+id/y7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choosing algorithm"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="30dp"/>
+
+    <Button
+        android:textColor="#0080ff"
+        android:id="@+id/button4"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="807dp"
+        android:layout_marginLeft="388dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E6E6FA"
+        android:text="Edmonds-Karp" />
+
+    <Button
+        android:textColor="#0080ff"
+        android:id="@+id/button20"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="807dp"
+        android:layout_marginLeft="388dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E6E6FA"
+        android:text="Dinic's" />
+
+    <Button
+        android:textColor="#0080ff"
+        android:id="@+id/button500"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="807dp"
+        android:layout_marginLeft="388dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E6E6FA"
+        android:text="Push-Relabel" />
+
+    <TextView
+        android:id="@+id/y8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0086b3"
+        android:text="We will initialize the maximum flow to 0.
+\nAt every iteration, we will find an improvement path, by preforming a BFS SEARCH in order to find the shortest path (number of edges) from 's' to 't'.
+\nIn this path, we will find the maximum flow – the edge with the minimum capacity.
+\nWe will add this flow to the maximum flow we have found until this round, and we will update the residual graph by reducing the forward edges and increasing the backward edges.
+\nThe algorithm will be ended when there are no more improvement paths.
+"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/y9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0086b3"
+        android:text="We will initialize the maximum flow to 0.
+\nAt every iteration, we will find a level graph, which will include all the shortest paths (number of edges) from 's' to 't' .
+\nIn this graph, we will find the blocking flow. We will add this flow to the maximum flow we have found until this round, and we will update the residual graph by reducing this flow from the forward edges and adding it to the backward edges.
+\nThe algorithm will be ended when there are no more level graphs. 
+"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="218dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/y10"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:textColor="#0086b3"
+        android:text="We will initialize the height (h) and the excess (e) of all the vertices to 0. The height of the source vertex will be the sum of all the vertices , and we will push the capacity of its forward edges to its connected vertices.
+\nWe will update the excess of the receiving vertices to the flow they have been received (push), and their height to the minimum height of the vertices they can push flow to them +1 (relabel). Accordingly, we will update the residual graph.
+\nThe vertices with excess>0 will be called 'active'. At every iteration, we will push flow from some active vertex 'v' to vertex 'w' - only if there is existing edge (v,w) where h(v)=h(w)+1, and we will relabel all the active vertices (except 's' and 't').
+\nThe algorithm will be ended when there are no more active vertices (except 's' and 't'). The maximum flow will be the excess of vertex 't'.    "
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="16dp"/>
+</android.support.design.widget.CoordinatorLayout>

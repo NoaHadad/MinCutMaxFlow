@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".PushRelabelAlgo">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_push_relabel_algo" />
+
+    <TextView
+        android:textColor="#003366"
+        android:id="@+id/y7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Push-Relabel Algorithm"
+        android:textSize="30dp" />
+
+    <com.example.noa.flowgraph.MyView2
+        android:id="@+id/simpleDrawingView5"
+        android:layout_width="909dp"
+        android:layout_height="438dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="#CCE5FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <Button
+        android:id="@+id/button99"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="725dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="8dp"
+        android:background="#e6ccff"
+        android:text="next"
+        android:textColor="#862d86"/>
+
+    <Button
+        android:id="@+id/button100"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="835dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="8dp"
+        android:background="#e6ccff"
+        android:text="previous"
+        android:textColor="#862d86"/>
+
+    <Button
+        android:id="@+id/button991"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="8dp"
+        android:background="#98FB98"
+        android:text="the residual graph"
+        android:textColor="#009900"/>
+
+    <Button
+        android:id="@+id/button992"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="650dp"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="8dp"
+        android:background="#98FB98"
+        android:text="the graph"
+        android:textColor="#009900"/>
+
+
+    <TextView
+        android:id="@+id/flow225"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="322dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/flow224"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="390dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tV44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Operatoin:"
+        android:textColor="#47476b"/>
+
+
+    <TextView
+        android:id="@+id/sendV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="320dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="360dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tV48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Sending vertex:"
+        android:textColor="#47476b"/>
+
+    <TextView
+        android:id="@+id/recivV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="320dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="515dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tV49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="395dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Receiving vertex:"
+        android:textColor="#47476b"/>
+
+    <TextView
+        android:id="@+id/trans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="275dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="620dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/trans1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="275dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="620dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tV50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="548dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Transferred flow:"
+        android:textColor="#47476b"/>
+
+    <TextView
+        android:id="@+id/graph7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="750dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#008ae6"
+        android:text="The residual graph"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122" />
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
